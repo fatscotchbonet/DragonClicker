@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+    background-color: blanchedalmond;
+}
+.main{
+	display: flex;
+    background-color: beige;
+	flex-wrap: wrap;
+}
+img{
+	height: 35vw;
+	max-width: 43vw;
+	width: calc((100vw-1.5em)/2);	
+}
+.dragon{	
+	padding-right: 1.5em;		
+}
+.div .dragon p{
+	border: solid thick; 
+	padding: 0.2em; 
+	margin: 1em 0.2em 0 0 ; 
+}
+
+@media screen and (min-width: 800px){
+	.main{ 
+		max-width: 800px;
+		margin-left: auto; 
+		margin-right: auto;		
+	}
