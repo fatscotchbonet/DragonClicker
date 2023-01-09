@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="dragon.css">
+    <title>Dragon Clicker</title>
+</head>
+<body>
+    <div>
+		<h1>Click Me Son!</h1>
+	</div>	
+	<div class="main">
+		<div class="Dragon">
+			<button id="button1"><img id="draggon" src="C:\Users\Koi\Documents\dragon_1f409.png" alt="a dragon guy" width="auto" height="auto"></button>
+			<br>
+			<p id="clicCount1"></p>
+		</div>	
+	<script type="text/javascript">
+		var countClick = function (e){
+			if (e.target.id == "draggon"){
+				output = output1;				
+			}				
+			if (output.textContent){
+				output.textContent= parseInt(output.textContent)+count;
+			}
+			else
+			{
+				output.textContent= count;
+			}			
+		}
+		var e1 = document.getElementById('draggon');
+		var output1 = document.getElementById('clicCount1');
+		var count = 1;
+
+		if (e1.addEventListener){
+			e1.addEventListener('click', countClick, false);
+		}
+	</script>
+    
+
+    
+</body>
+</html>
